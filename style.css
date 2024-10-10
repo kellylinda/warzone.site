@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+    background-color: #1c1c1c; /* Fundo escuro */
+    color: #f0f0f0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #444; /* Cor do cabeçalho */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00; /* Cor dos links */
+}
+
+nav ul li a:hover {
+    color: #e5e500; /* Cor dos links ao passar o mouse */
+}
+
+h1, h2 {
+    color: #ffcc00; /* Títulos em amarelo */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555; /* Borda para seções */
+    background-color: #333; /* Fundo das seções */
+}
+
+.imagem-destaque {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.quiz {
+    text-align: center;
+    background-color: #2a2a2a; /* Fundo da seção de quiz */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.input-quiz {
+    padding: 10px;
+    width: 60%;
+    margin-top: 10px;
+    border: 1px solid #555;
+    border-radius: 4px; /* Bordas arredondadas para o input */
+}
+
+.button-quiz {
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Cor do botão */
+    border: none;
+    border-radius: 4px; /* Bordas arredondadas para o botão */
+    color: #1c1c1c; /* Cor do texto do botão */
+    cursor: pointer; /* Mão ao passar o mouse */
+    margin-top: 10px;
+}
+
+.button-quiz:hover {
+    background-color: #e5e500; /* Cor do botão ao passar o mouse */
+}
+
+.result-quiz {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.download {
+    text-align: center;
+    background-color: #2a2a2a; /* Fundo da seção de download */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.plataformas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+    margin-top: 20px;
+}
+
+.plataforma {
+    background-color: #444; /* Fundo dos links de plataforma */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.plataforma:hover {
+    background-color: #ffcc00; /* Cor ao passar o mouse */
+    color: #1c1c1c; /* Cor do texto ao passar o mouse */
+}
+
+.plataforma-icon {
+    width: 40px; /* Tamanho do ícone */
+    height: 40px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.historico {
+    text-align: center;
+    background-image: url('capa.jpeg'); /* URL da imagem de fundo */
+    background-size: cover; /* Cobre toda a seção */
+    background-position: center; /* Centraliza a imagem */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento abaixo da seção */
+    position: relative; /* Necessário para o pseudo-elemento */
+    overflow: hidden; /* Para evitar que o conteúdo saia da seção */
+}
+
+.historico::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada de cor escura sobre a imagem */
+    z-index: 1; /* Coloca a camada acima da imagem, mas abaixo do texto */
+}
+
+.historico h2, .historico h3, .historico p {
+    position: relative; /* Para que o texto apareça acima da camada escura */
+    z-index: 2; /* Coloca o texto acima da camada escura */
+}
+
